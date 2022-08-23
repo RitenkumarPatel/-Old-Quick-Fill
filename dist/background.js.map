@@ -1,0 +1,1 @@
+{"version":3,"file":"background.js","mappings":";;;;;AAAA;AACA;AACA;AACA;AACA","sources":["webpack://quick-fill/./src/background/background.ts"],"sourcesContent":["chrome.commands.onCommand.addListener((command) => {\r\n    if (command == 'Fill'){\r\n        console.log(\"Ctrl+q pressed\")\r\n    }\r\n})"],"names":[],"sourceRoot":""}

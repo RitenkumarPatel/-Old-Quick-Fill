@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+  
+    "name": "Quick Fill",
+    "description": "Note taking extension for Google Docs",
+    "version": "0.0.1",
+    "icons": {
+      "128": "./icon_128.png",
+      "48": "./icon_48.png",
+      "16": "./icon_16.png"
+    },
+
+    "background": {
+      "service_worker": "background.js"
+    },
+
+    "action": {
+        "default_title": "Click Me",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+      "activeTab", 
+      "scripting"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://docs.google.com/document/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "commands": {
+      "Fill": {
+        "suggested_key": "Ctrl+Q",
+        "description": "My first command"
+      }
+    }
+
+}

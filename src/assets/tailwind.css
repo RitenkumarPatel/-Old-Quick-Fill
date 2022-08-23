@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    height: 175px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    
+}
+.customButton{
+    background-color: white;
+    color: #000000;
+
+    margin-right: 100px;
+
+    outline: 0;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 10px 0px;
+
+    border-radius: 100px;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+
+
+    cursor: pointer;
+    box-shadow: 0px 2px 2px lightgray;
+
+}
+.header{
+    text-align: center;
+    margin: 10px 0px;
+    font-family: Georgia, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.toggleSwitch{
+    width: 170px;
+    height: 100px;
+    border-radius: 100px;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    z-index: 2;
+}

@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+
+  "name": "Quick Fill",
+  "description": "Note taking extension for Google Docs",
+  "version": "0.0.1",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3iM5AXxZkGv1txEnZMIgpd/bZR/s1ffDREmgVbycRvvGVCBu8CC1qK507sTR9aBR0El1AlKTifYbhGU3q5eG6W5jWm8+6ujX5rM8N6LYN86BOrk1tzsU2KZpDhrA2Te3Sr64yqWVX2coVEIqZRZQx5cVk/LhnhAHuV/LYSKey/mpJkmqAO6FDJ8+1cPL9xYTIWDJ275DOdbLH1R589wIjjBQ2m+XZzGDSLtGSdvB05cgTVs3e4JE8pqF+yn7Y/TaPSGc7jnQqpuLXnA68rEn/RLAZDDohoLYJv7WQNqzejNtPsm4dMFAT7dhYJMqLlx1nWyWUYcPyMPhUE0uCowQXwIDAQAB",
+ 
+  "icons": {
+    "128": "./icon_128.png",
+    "48": "./icon_48.png",
+    "16": "./icon_16.png"
+  },
+  "background":{
+    "service_worker": "background.js"
+  },
+
+  "action": {
+      "default_title": "Click Me",
+      "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "identity"
+  ],
+  "host_permissions": [
+    "http://*/",
+    "https://*/"
+  ],
+
+  "commands": {
+    "Fill": {
+      "suggested_key": "Ctrl+Q",
+      "description": "My first command"
+    }
+  }
+
+}
